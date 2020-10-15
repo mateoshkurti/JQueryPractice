@@ -1,0 +1,41 @@
+body {background: radial-gradient(rgb(131, 131, 131), rgb(39, 39, 39))}
+
+.gridContainer {
+border: 2px solid, white;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas:
+"head head"
+"img inf"
+". foot"
+;
+gap: 5px;
+place-items: center;
+}
+
+
+#image{grid-area: img;
+padding: 10%;
+padding-right: 5%;}
+#info{grid-area: inf;
+color:white;}
+header{
+grid-area: head;
+color: white ;
+font-size: x-large;
+text-align: center;
+}
+
+footer{
+grid-area: foot;
+color: white; 
+}
+
+a {border: thin solid navy; 
+  background-color: blanchedalmond;
+	border-radius: 10px; 
+	text-decoration: none;
+  padding: 5px; 
+  font-size: large;
+}

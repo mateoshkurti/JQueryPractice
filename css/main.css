@@ -1,0 +1,75 @@
+body {background: radial-gradient(rgb(131, 131, 131), rgb(39, 39, 39));
+     width: device-width;
+
+
+}
+
+#gridContainer {
+  border: 2px solid, white;
+	display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "head head"
+  "lArea link"
+  ". foot"
+	;
+  gap: 5px;
+  place-items: center;
+}
+li{
+  display: flex;
+  
+}
+.head{
+  grid-area: head;
+  color: white ;
+  font-size: x-large;
+  text-align: center;
+}
+#listArea {
+  padding-right: 20%;
+  padding-left: 20% ;
+  grid-area: lArea;
+  background-color: red;
+  
+  color: rgb(255, 250, 250);
+  text-align: center;
+}
+#linkArea {grid-area: link;
+  background-color: violet;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+color: wheat; }
+.foot{
+  grid-area: foot;
+  color: white; 
+}
+
+.buttons{
+  padding: 10%;
+}
+button{
+  height: 50px;
+}
+
+a {border: thin solid navy; 
+  background-color: blanchedalmond;
+	border-radius: 10px; 
+	text-decoration: none;
+  padding: 5px; 
+  font-size: large;
+}
+
+/* https://flaviocopes.com/rotate-image/ */
+.rotate { animation: rotation 5s infinite linear;
+          border: solid thick blue;
+        }
+
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
+.effect {color: blue;}
